@@ -4,6 +4,7 @@ import { db } from '../../../../firebase/firebaseConfig';
 import { useAuth } from '../../../../firebase/Auth';
 import { useProductData } from '../ProductDataContext/ProductDataContext';
 import { collection, onSnapshot, doc } from 'firebase/firestore';
+import Loading from '../components/Loading';
 
 const OrderDetails = ({ order }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -98,7 +99,7 @@ const Page = () => {
   }, [authUser]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loading/>
   }
 
   return (
