@@ -11,7 +11,7 @@ import { useAdminContext } from "../Adminlogic/Logic";
 
 
 const ProdctsForm = () => {
-  const { 
+  const {
     imageFile,
     setImageFile,
     imageError,
@@ -23,7 +23,7 @@ const ProdctsForm = () => {
     handleChange,
     handleCategoryChange,
     handleAvailabilityChange, } = useAdminContext();
- 
+
   const handleAddProduct = async (e) => {
     e.preventDefault();
     if (
@@ -133,16 +133,17 @@ const ProdctsForm = () => {
           </label>
 
 
-          <select onChange={handleCategoryChange} value={formData.category} id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-            <option value="fruits">Fruits</option>
-            <option value="vegetables">Vegetables</option>
-            <option value="canned-food">Canned Food</option>
-            <option value="bakery-items">Bakery Items</option>
-            <option value="fishes">Fishes</option>
-            <option value="egg-and-dairy">Egg and Dairy</option>
-            <option value="soft-drinks-snacks">Soft Drinks and Snacks</option>
-            <option value="soft-drinks-snacks">others</option>
+          <select onChange={handleCategoryChange} value={formData.category} id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+            <option value="italian">Italian</option>
+            <option value="mexican">Mexican</option>
+            <option value="chinese">Chinese</option>
+            <option value="indian">Indian</option>
+            <option value="fast-food">Fast-Food</option>
+            <option value="desserts">Desserts</option>
+            <option value="beverages">Beverages</option>
+            <option value="others">Others</option>
           </select>
+
         </div>
         <div className="inline-block mt-2 -mx-1 pl-1 w-1/2">
           <label className="hidden block text-sm text-gray-600" htmlFor="availability">

@@ -13,6 +13,9 @@ import { collection, query, where, getDocs , onSnapshot } from "firebase/firesto
 import {db} from "../../../firebase/firebaseConfig.js"
 import { useAuth } from "../../../firebase/Auth";
 import { useProductData } from "./ProductDataContext/ProductDataContext";
+import Banner from "./components/Banner";
+import ProcessSection from "./components/ProcessSection";
+import NewsletterSection from "./components/NewsletterSection";
 
 
 export default function Home() {
@@ -39,13 +42,16 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Banner/>
       <Category />
-      <FeatureSectionFruits />
+      <ProcessSection/>
+      <NewsletterSection/>
+      {/* <FeatureSectionFruits />
       <FeatureSectionBreakfast />
       <BannerSection />
       <BlogSection />
       <Newsletter />
-      <FeatureSection />
+      <FeatureSection /> */}
     </main>
   );
 }

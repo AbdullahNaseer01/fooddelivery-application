@@ -17,8 +17,7 @@ const CategoryPage = ({ params }) => {
 
   const router = useRouter();
   const category = params.category || "defaultCategory";
-  const allowedRoutes = ['dashboard', 'fruits', 'vegetables', 'canned-food', 'bakery-items', 'fishes', 'egg-and-dairy', 'soft-drinks-snacks', 'others'];
- 
+  const allowedRoutes = ['dashboard', 'Italian', 'Mexican', 'Chinese', 'Indian', 'Fast-Food', 'Desserts', 'Beverages', 'Others'];
   const addToCart = async (product) => {
     if (authUser) {
       try {

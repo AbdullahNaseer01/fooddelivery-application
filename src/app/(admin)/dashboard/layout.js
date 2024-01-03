@@ -36,10 +36,10 @@ const adminLayout = ({ children }) => {
   return (
     <html lang="en">
       <body >
+        <AuthUserProvider>
         <AdminHeader />
         <ToastContainer />
         <AdminAside />
-        <AuthUserProvider>
           <AdminContextProvider>{children}</AdminContextProvider>
         </AuthUserProvider>
 

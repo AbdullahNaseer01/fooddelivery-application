@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
-import { getAuth } from 'firebase/auth';
+import { useAuth } from '../firebase/Auth';
 
-const auth = getAuth();
+
+const auth = useAuth ();
 
 export function middleware(request) {
     console.log("middleware hit")
