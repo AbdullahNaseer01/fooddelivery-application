@@ -158,9 +158,9 @@ const ProductDetailsPage = () => {
                   </button>
                 </div>
                 <div className="w-1/2 px-2">
-                  <button className="w-full bg-gray-400 text-gray-800 py-2 px-4 rounded-full font-bold hover:bg-gray-300">
+                  {/* <button className="w-full bg-gray-400 text-gray-800 py-2 px-4 rounded-full font-bold hover:bg-gray-300">
                     Add to Wishlist
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@ const ProductDetailsPage = () => {
                   </span>
                 </div>
               </div>
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <span className="font-bold text-gray-700">Select Color:</span>
                 <div className="flex items-center mt-2">
                   <button className="w-6 h-6 rounded-full bg-gray-800 mr-2" />
@@ -189,8 +189,8 @@ const ProductDetailsPage = () => {
                   <button className="w-6 h-6 rounded-full bg-blue-500 mr-2" />
                   <button className="w-6 h-6 rounded-full bg-yellow-500 mr-2" />
                 </div>
-              </div>
-              <div className="mb-4">
+              </div> */}
+              {/* <div className="mb-4">
                 <span className="font-bold text-gray-700">Select Size:</span>
                 <div className="flex items-center mt-2">
                   <button className="bg-gray-300 text-gray-700 py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400">
@@ -209,7 +209,7 @@ const ProductDetailsPage = () => {
                     XXL
                   </button>
                 </div>
-              </div>
+              </div> */}
               <div>
                 <span className="font-bold text-gray-700">
                   Product Description:
